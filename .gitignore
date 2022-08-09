@@ -1,0 +1,11 @@
+tickets.aux
+tickets.fdb_latexmk
+tickets.fls
+tickets.log
+tickets.synctex.gz
+
+answer_book.aux
+answer_book.fdb_latexmk
+answer_book.fls
+answer_book.log
+answer_book.synctex.gz
