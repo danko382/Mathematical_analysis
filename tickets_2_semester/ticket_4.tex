@@ -13,7 +13,8 @@ S_n = S$, то $S \in \overline{R}$ называют суммой ряда и обозначают
 
 4. Говорят, что ряд $\sum a_n$ удовлетворяет условию Коши, если
 
-\[\forall \epsilon > 0 \quad \exists n_{\epsilon} \geq n_{\epsilon} \quad
+\[\forall \epsilon > 0 \quad \exists n_{\epsilon} \in N \quad
+\forall n \geq n_{\epsilon} \quad
 \forall p \in N \quad \left| \sum_{k = n + 1}^{n + p} 
 a_k \right| < \epsilon\] \smallskip
 
@@ -25,10 +26,10 @@ a_k \right| < \epsilon\] \smallskip
 Доказательсво: \smallskip
 
 Используя критерий Коши сходимости последовательности, имеем: ряд
-$\sum a_n$ сходится $\iff (S_n)$ сходится $\iff (S_n)$ фундаментален, т.е.
+$\sum a_n$ сходится $\iff (S_n)$ сходится $\iff (S_n)$ фундаментальна, т.е.
 
 \[\forall \epsilon > 0 \quad \exists n_{\epsilon} \in N \quad \forall n \geq
-n_{\epsilon} \quad \forall p \in N \left| S_{n + p} - S_n 
+n_{\epsilon} \quad \forall p \in N \quad \left| S_{n + p} - S_n 
 \right| < \epsilon\]
 
 Осталось заметить, что

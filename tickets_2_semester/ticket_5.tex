@@ -1,0 +1,34 @@
+1. Теорема об арифметических действиях над сходящимися рядами: \smallskip
+
+Пусть ряды $\sum a_n, \quad \sum b_n$ сходятся и $\sum^{\infty}_{n = 1} a_n =
+A, \quad \sum^{\infty}_{n = 1} b_n = B, \quad \lambda \in R.$ Тогда ряды
+$\sum (a_n + b_n)$ и $\sum \lambda a_n$ сходятся и
+
+\[\sum^{\infty}_{n = 1} (a_n + b_n) = A + B, \quad
+\sum^{\infty}_{n = 1} \lambda a_n = \lambda A.\]
+
+Доказательство: \smallskip
+
+\[\sum^{\infty}_{n = 1} (a_n + b_n) = \lim_{n \to \infty} \sum^n_{n = 1}
+(a_k + b_k) = \lim_{n \to \infty} (\sum^n_{k = 1} a_k + \sum^n_{k = 1} b_k)
+= \lim_{n \to \infty} \sum^n_{k = 1} a_k + \lim_{n \to \infty} \sum^n_{k = 1}
+b_k = A + B.\] 
+\[\sum^{\infty}_{n = 1} \lambda a_n = \lim_{n \to \infty} \sum^n_{k = 1}
+\lambda a_k = \lim_{n \to \infty} (\lambda \sum^n_{k = 1} a_k) = 
+\lambda \lim_{n \to \infty} \sum^n_{k = 1} a_k = \lambda A.\]
+
+2. Ряд $\sum a_n$ называют абсолютно сходящимся, если сходится ряд
+$\sum \left| a_n \right|.$ \smallskip
+
+3. Теорема о сходимости абсолютно сходящегося ряда: \smallskip
+
+Если ряд сходится абсолютно, то он сходится. \smallskip
+
+Доказательство: \smallskip
+
+В силу свойств модуля
+
+\[\left| \sum^{n + p}_{k = n + 1} a_k \right| \leq \sum^{n + p}_{k = n + 1}
+\left| a_k \right|,\]
+
+и остаётся воспользоваться критерием Коши сходимости числового ряда.
