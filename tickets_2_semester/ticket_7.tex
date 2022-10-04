@@ -1,0 +1,46 @@
+\textbf{1. Признак мажорации:} \smallskip
+
+Пусть $\forall n \in N \quad a_n \geq 0, \quad b_n \geq 0, \quad a_n = O(b_n)$ и
+$\sum^{\infty}_{n = 1} b_n < +\infty$. Тогда $\sum^{\infty}_{n = 1} a_n < +\infty$ \smallskip
+
+Доказательство: Итак, \smallskip
+
+\[\exists C > 0 \quad \forall n \in N \quad 0 \leq a_n \leq Cb_n.\]
+
+Поэтому 
+
+\[0 \leq \sum^n_{k = 1} a_k \leq C \sum^n_{k = 1} b_k.\]
+
+Переходя далее к пределу при $n \to +\infty$, получим \smallskip
+
+\[0 \leq \sum^{\infty}_{k = 1} a_k \leq C \sum^{\infty}_{k = 1} b_k < +\infty.\]
+
+\textbf{Следствие 1:} Пусть $\forall n \in N \quad a_n \geq 0, b_n > 0,$ последовательность
+$\left(\frac{a_n}{b_n}\right)$ сходится и $\sum^{\infty}_{n = 1} b_n < +\infty.$ Тогда
+$\sum^{\infty}_{n = 1} a_n < +\infty.$ \smallskip
+
+Доказательство: \smallskip
+
+Из условия вытекает, что последовательность $\left(\frac{a_n}{b_n}\right)$ ограничена, т.е.
+
+\[\exists C > 0 \quad \forall n \in N \quad 0 \leq \frac{a_n}{b_n} \leq C,\]
+
+и, следовательно, $a_n = O(b_n).$ Осталось воспользоваться признаком мажорации.
+
+\textbf{2. Признак сравнения в предельной форме:}\smallskip
+
+Пусть $\forall n \in N \quad a_n > 0, \quad b_n > 0,$ и существует конечный предел 
+
+\[\lim_{n \to \infty} \frac{a_n}{b_n} = k \neq 0.\]
+
+Тогда ряды $\sum a_n$ и $\sum b_n$ ведут себя одинаково. \smallskip
+
+Доказательство: \smallskip
+
+В силу следствия 1 предыдущей теоремы из сходимости ряда $\sum b_n$ вытекает сходимость ряда $\sum a_n.$
+
+Поскольку
+
+\[\lim_{n \to \infty} \frac{b_n}{a_n} = \frac{1}{k},\]
+
+то в силу того же следствия из сходимости ряда $\sum a_n$ вытекает сходимость ряда $\sum b_n$.
