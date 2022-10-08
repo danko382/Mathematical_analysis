@@ -1,0 +1,53 @@
+\textbf{1. Следствие признака мажорации:}\smallskip
+
+Пусть $\forall n \in N \quad a_n > 0, \quad b_n > 0, \quad
+\frac{a_{n + 1}}{a_n} \leq \frac{b_{n + 1}}{b_n}$ и $\sum^{\infty}_{n = 1}
+b_n < +\infty.$ Тогда $\sum^{\infty}_{n = 1} a_n < +\infty.$ \smallskip
+
+Доказательство: \smallskip
+
+Имеем 
+
+\[0 < \frac{a_{n + 1}}{a_n} \leq \frac{a_n}{b_n} \leq \dots \leq
+\frac{a_1}{b_1},\]
+
+и, следовательно, $a_n = 0(b_n)$. Осталось воспользоваться признаком
+мажорации. \bigskip
+
+\textbf{2. Признак Даламбера:} \smallskip
+
+Пусть $\forall n \in N > 0$ и 
+
+\[\lim_{n \to \infty} \frac{a_{n + 1}}{a_n} = \alpha\]
+
+Тогда \smallskip
+
+1) если $\alpha < 1$, то ряд $\sum a_n$ сходится.
+
+2) если $\alpha Ю 1$, то ряд $\sum a_n$ рассходится.
+
+3) если $\alpha = 1$, то вопрос о сходимости ряда остаётся открытым.
+\smallskip
+
+Доказательство: \smallskip
+
+1) Пусть $\alpha < 1$ и $\alpha < q < 1$. В силу порядковых свойств 
+предела
+
+\[\exists n_0  \quad \forall n \geq n_0 \quad \frac{a_{n + 1}}{a_n} < q =
+\frac{q^{n + 1}}{q^n}\]
+
+Поскольку ряд $\sum q^n$ при $0 < q < 1$ сходится, то, на основании
+следствия признака мажорации, делаем вывод о сходимости
+ряда $\sum a_n$. \smallskip
+
+2) Пусть $\alpha > 1$. Тогда 
+
+\[\exists n_0 \quad \forall n \geq n_0 \quad \frac{a_{n + 1}}{a_n}
+> 1,\]
+
+т.е. $a_{n + 1} > a_n$ при $n \geq n_0$. В это случае $a_n \neq$ o(1),
+следовательно ряд $\sum a_n$ расходится. \smallskip
+
+3) Для рядов $\sum \frac{1}{n}$ и $\sum \frac{1}{n^2}$ указанное в теореме число 
+$\alpha = 1$, в то время как один из них расходится, а другой сходится. 
