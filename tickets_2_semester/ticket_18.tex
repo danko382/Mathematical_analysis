@@ -1,0 +1,82 @@
+\textbf{1"=2. Равномерная норма и её свойства.} \smallskip
+
+Пусть функция $f$ определена на множестве X. Равномерную норму
+функции обозначим сомволом $||f||$ и определим равенством
+
+\[||f|| = \sup_{x \in X} |f(x)|.\]
+
+Простейшие совйства равномерной нормы: \smallskip
+
+$1. \forall x \in X \quad |f(x)| \leq ||f||.$ \smallskip
+
+$2. ||f|| < +\infty \iff f$ ограничена. \smallskip
+
+$3. ||f|| \geq 0$ и $||f|| = 0 \iff f(x) = 0 \quad \forall
+x \in X.$ \smallskip
+
+$4. \forall \lambda \in R \quad ||\lambda f|| =
+|\lambda| * ||f||.$ \smallskip
+
+$5. ||f + g|| \leq ||f|| + ||g||.$ \smallskip
+
+$6. ||f * g|| \leq ||f|| * ||g||.$ \smallskip
+
+Доказательство: (нужно найти и написать) \bigskip
+
+\textbf{2. Равномерная сходимость функции:} \smallskip
+
+Пусть все функции $f_n$ и функция $f$ определены на множестве
+$X$. \smallskip
+
+Будем говорить, что последовательность $(f_n)$ равномерно сходится
+к функции $f$ и обозначать символом $f_n \rightrightarrows f$, 
+если \smallskip
+
+\[\lim_{n \to \infty} ||f_n - f|| = 0.\]
+
+Условие определения равномерной сходимости можно расписать 
+подробнее:
+
+\[\forall \epsilon > 0 \quad \exists n_{\epsilon} \in N
+\quad \forall n \geq n_{\epsilon} \quad \forall x \in X
+\quad |f_n(x) - f(x)| < \epsilon.\]
+
+\textbf{2. Поточечная сходимость функции:} \smallskip
+
+Если последовательность $(f_n)$ равномерно сходится к функции
+$f$, то последовательность $(f_n)$ сходится поточечно к
+функции $f.$ \bigskip
+
+\textbf{3. Критерий Коши равномерной сходимости функциональной
+последовательности:} \smallskip
+
+Последовательность $(f_n)$ равномерно сходится $\iff$ когда
+
+\[\forall > 0 \quad \exists n_{\epsilon} \in N \quad \forall n
+\geq n_{\epsilon} \quad \forall m \geq n_{\epsilon} \quad
+||f_n - f_m|| < \epsilon.\]
+
+Доказательство: \smallskip
+
+Необходимость доказывается тривиально. \quad
+
+Достаточность \smallskip
+
+\[\forall \epsilon > 0 \quad \exists n_{\epsilon} \in N \quad \forall
+n \geq n_{\epsilon} \quad \forall m \geq n_{\epsilon} \quad
+\forall x \in X \quad |f_m(x) - f_n(x)| < \epsilon. \quad \quad (8)\]
+
+Это означает, что последовательность $(f_n(x)) \quad \forall x
+\in X$ фундаментальна, следовательно, она сходится (мы воспользовались
+критерием Коши сходимости числовой последовательности). \smallskip
+
+Пусть функция $f$ является поточечным пределлом последовательности
+$(f_n)$. \smallskip
+
+Перейдя к пределу при $m \to \infty$ в условии (8), получим
+
+\[\forall \epsilon > 0 \quad \exists n_{\epsilon} \in N \quad
+\forall n \geq n_{\epsilon} \quad \forall x \in X \quad
+|f(x) - f_n(x)| \leq \epsilon.\]
+
+Это означет, что $f_n \rightrightarrows f.$
