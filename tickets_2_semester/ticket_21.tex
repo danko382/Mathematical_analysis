@@ -1,0 +1,73 @@
+\textbf{1. Признак Абеля:} \smallskip
+
+Пусть $\forall x \in X \quad f_n(x)\downarrow,$ ряд $\sum g_n$
+равномерно сходится и $||f_n|| = O(1)$. Тогда ряд $\sum f_n g_n$
+равномерно сходится. \smallskip
+
+Доказательство: \smallskip
+
+Пусть $M > 0$ такое, что $\forall n \in N \quad ||f_n|| \leq M$,
+и $\epsilon > 0$. Согласно критерию Коши равномерной сходимости 
+функционального ряда из условия равномерной сходимости 
+функционального ряда $\sum g_n$
+имеем
+
+\[\exists n_{\epsilon} \in N \quad \forall n > n_{\epsilon} \quad
+\forall k \in N \quad \forall x \in X \quad |G_{n, k}(x)| = \]
+
+\[=|G_{n + k}(x) - G_n(x)| < \epsilon.\]
+
+Поэтому $\forall n \geq n_{\epsilon} \quad \forall p \in N \quad
+\forall x \in X$
+
+\[\left| \sum^{n + p}_{k = n + 1} f_k(x)g_k(x)\right| = \left|
+\sum^{p - 1}_{k = 1}(f_{n + k}(x) - f_{n + k + 1}(x))G_{n, k}(x) +
+f_{n + p}(x)G_{n, p}(x)\right| <\]
+
+\[<\epsilon \sum^{p - 1}_{k = 1}(f_{n + k}(x) - f_{n + k + 1}(x)) +
+\epsilon |f_{n + p}(x)| = \epsilon (f_{n + 1} - f_{n + p}) + \epsilon
+|f_{n + p}(x)| \leq\]
+
+\[\leq \epsilon 2 M + \epsilon M = 3M\epsilon.\]
+
+Согласно критерию Коши ряд $\sum f_n g_n$ сходится равномерно. \bigskip
+
+\textbf{2. Признак Дирихле:} \smallskip
+
+Пусть $\forall x \in X \quad f_n(x) \downarrow, \quad ||\sum^n_{k = 1}
+g_k|| = O(1), \quad ||f_n|| = o(1).$ Тогда ряд $\sum f_n g_n$ равномерно
+сходится. \smallskip
+
+Докзательство: \smallskip
+
+Обозначив 
+
+\[G_n = \sum^n_{k = 1} g_k, \quad G_{n, k} = \sum^k_{i = 1} g_{n + i},\]
+
+имеем:
+
+\[\exists M \quad \forall n \in N \quad ||G_n|| \leq M\]
+
+и
+
+\[\forall n \in N \quad \forall k \in N \quad ||G_{n,k}||
+= ||G_{n + k} - G_n|| \leq ||G_{n + k}|| + ||G_n|| \leq 2 M.\]
+
+Тогда $forall x \in X$
+
+\[\left| \sum^{n + p}_{k = n + 1} f_k(x) g_k(x)\right| = 
+\left| \sum^{p - 1}_{k = 1}(f_{n + k}(x) - f_{n + k + 1}(x))
+G_{n,k}(x) + f_{n + p}(x) G_{n,p}(x)\right| \leq\]
+
+\[\leq 2M \sum^{p - 1}_{k = 1}(f_{n + k}(x) - f_{n + k + 1}(x)) +
+f_{n + p}(x) * 2M = 2M f_{n + 1}(x) \leq 2M ||f_{n + 1}||.\]
+
+Пусть $\epsilon > 0$. Тогда $\exists n_{\epsilon} \quad 
+\forall n \geq n_{\epsilon} \quad ||f_n|| < \epsilon$. Продолжим 
+оценку
+
+\[\forall n \geq n_{\epsilon} \quad \forall p \in N \quad 
+\forall x \in X \quad \left| \sum^{n + p}_{k = n + 1} f_k(x)g_k(x)
+\right| \leq 2M||f_{n + 1}||<2M \epsilon.\]
+
+Согласно критерию Коши ряд $\sum f_n g_n$ равномерно сходитсяю
