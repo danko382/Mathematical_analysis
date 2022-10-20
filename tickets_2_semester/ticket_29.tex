@@ -1,0 +1,99 @@
+\textbf{1. Понятие частной производной функции многих
+переменных:} \smallskip
+
+Частной производной функции $f$ по первой переменной в точке
+$\overline{x}_0 = (x^0_1, \dots, x^0_m)$ называем предел
+
+\[\lim_{x_1 \to x^0_1} \frac{f(x_1, x^0_2, \dots, x^0_m) -
+f(x^0_1, x^0_2, \dots, x^0_m)}{x_1 - x^0_1},\]
+
+если он существует, и обозначают символом \smallskip
+
+\begin{center}
+    $\frac{df}{dx_1}(\overline{x}_0),$ или $f^{'}_{x_1}(\overline{x}_0),$
+    или $D_1 f(\overline{x}_0)$ \smallskip
+\end{center}
+
+Аналогично определяются частные производные по остальным
+переменным. \bigskip
+
+\textbf{2. Дифференцируемость функции в точке:} \smallskip
+
+Пусть точка $\overline{x}_0$ является внутренней точкой области
+определения функции $f$. \smallskip
+
+Функция $f$ называется дифференцируемой в точке $\overline{x}_0$,
+если приращение функции в этой точке может быть представлено 
+в виде 
+
+\[f(\overline{x}) - f(\overline{x}_0) = \phi_1(\overline{x})(x_2 -
+x^0_2) + \dots + \phi_m(\overline{x})(x_m - x^0_m), \quad
+\quad (11)\]
+
+где функции $\phi_k (k = 1, \dots, m)$ непрерывны в точке
+$\overline{x}$. \smallskip
+
+Обозначим $A_k = \phi_k(\overline{x}_0).$ Тогда $\phi_k (\overline{x}) =
+A_k + \alpha_k (\overline{x}),$ где функции $\alpha_k$ бесконечно
+малы в точке $\overline{x}_0$. Очевидно, что равенство (11) эквивалентно
+равенству
+
+\[f(\overline{x}) - f(\overline{x}_0) = A_1(x_1 - x^0_1)+ \dots +
+A_m(x_m - x^0_m) + \alpha_1(\overline{x})(x_1 - x^0_1) + \dots +
+\alpha_m(\overline{x})(x_m - x^0_m). \quad \quad (12)\]
+
+Покажем, что условие (11) эквивалентно условию
+
+\[f(\overline{x}) - f(\overline{x}_0) = A_1(x_1 - x^0_1) + \dots +
+A_m(x_m - x^0_m) + o(|\overline{x} - \overline{x}_0|). \quad
+\quad (13)\]
+
+Действительно,
+
+\[|\alpha_1(x)(x_1 - x^0_1) + \dots + \alpha_m(x)(x_m - x^0_m)| \leq
+\left[|\alpha_1(\overline{x})| \frac{|x_1 - x^0_1|}{|\overline{x} -
+\overline{x}_0|} + \dots +|\alpha_m(\overline{x})| \frac{|x_m - x^0_m|}{
+|\overline{x} - \overline{x}_0|}\right] |\overline{x} - 
+\overline{x}_0| \leq\]
+
+\[\leq (|\alpha_1(\overline{x})| + \dots +|\alpha_m(\overline{x})|)
+|\overline{x} - \overline{x}_0| = o(|\overline{x} - \overline{x}_0|).\]
+
+С другой стороны,
+
+\[o(|\overline{x} - \overline{x}_0|) = \frac{o(|\overline{x} - 
+\overline{x}_0|)}{|\overline{x} - \overline{x}_0|}
+\frac{|\overline{x} - \overline{x}_0|^2}{|\overline{x} - 
+\overline{x}_0|} = \]
+
+\[= \frac{o(|\overline{x} - \overline{x}_0|)}{|\overline{x} -
+\overline{x}_0|} \frac{|x_1 - x^0_1|^2 + \dots + |x_m - x^0_m|^2}
+{|\overline{x} - \overline{x}_0|} =\]
+
+\[=\left[\frac{o(|\overline{x} - \overline{x}_0|)}{
+|\overline{x} - \overline{x}_0|} \frac{x_1 - x^0_1}{
+|\overline{x} - \overline{x}_0|}\right] (x_1 - x^0_1) + \dots +
+\left[\frac{o(|\overline{x} - \overline{x}_0|)}{|\overline{x} -
+\overline{x}_0|} \frac{x_m - x^0_m}{|\overline{x} - \overline{x}_0|}
+\right](x_m - x^0_m)\]
+
+Обозначая
+
+\[\alpha_i(\overline{x}) = \frac{o(|\overline{x} - \overline{x}_0|)}{
+|\overline{x} - \overline{x}_0|} \frac{x_i - x^0_i}{|\overline{x} -
+\overline{x}_0|}\]
+
+и учитывая, что $\alpha_i = o(1)$ при $\overline{x} \to \overline{x}_0$,
+придём к представлению (12).\smallskip
+
+Равенства (11), (12), (13) называют условием диффиринцируемости функции
+в точке $\overline{x}_0$. \bigskip
+
+\textbf{3. Теорема о диффиренцируемости функции в точке:} \smallskip
+
+Если функция $f$ дифференцируема в точке $\overline{x}_0$, то она
+непрерывна в этой точке. \smallskip
+
+Доказательство: \smallskip
+
+Доказательство вытекает из равенства (11).
