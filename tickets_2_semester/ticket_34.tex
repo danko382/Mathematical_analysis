@@ -1,0 +1,63 @@
+\textbf{1. Понятие производной по направлению:} \smallskip
+
+Пусть вектор $\overline{a}\in R^m$~--- вектор единичной длины,
+и прямая $l$ проходит через точку $\overline{x}_0$ параллельно
+вектору $\overline{a}$. Параметрическое представление прямой
+$l$ имеет вид: $\overline{x} = \overline{x}_0 + t \overline{a},
+\quad t \in R.$ Рассмотрим функцию $F(t) = f(\overline{x}_0 + t
+\overline{a}).$ Она представлена $\forall t$ таких, что точка
+$\overline{x}_0 + t\overline{a}$ принадлежит области определения
+функции $f$. \smallskip
+
+Если существует производная $F^{'}(0),$  то её называют производной
+функции $f$ в точке $\overline{x}_0$ по направлению вектора
+$\overline{a}$ и обозначают символом $\frac{df}{d\overline{a}}
+(\overline{x}_0).$ \smallskip
+
+Можно расписать подробнее
+
+\[\frac{df}{d\overline{a}}(\overline{x}_0) = \lim_{t \to 0}
+\frac{F(t) - F(0)}{t} = \lim_{t \to 0} \frac{f(\overline{x}_0 +
+t \overline{a}) - f(\overline{x}_0)}{t}.\]
+
+\textbf{2. Теорема о существовании производной по направлению
+у диффиренцируемой функции:} \smallskip
+
+Если функция $f$ дифференцируема в точке $\overline{x}_0$, то 
+для любого единичного векора $\overline{a} = (a_1, \dots, a_m)$
+существует производная функции $f$ в точке $\overline{x}_0$ по 
+направлению вектора $\overline{a}$ и справедливо равенство
+
+\[\frac{df}{d\overline{a}}(\overline{x}_0) = 
+\frac{df}{dx_1}(\overline{x}_0)a_1 + \dots + 
+\frac{df}{dx_m}(\overline{x}_0)a_m. \quad \quad (15)\]
+
+\textbf{3. Понятие вектора градиента и его свойства:} \smallskip
+
+Пусть функция $f$ диффиренцируема в точке $\overline{x}_0$.
+Градиентом функции $f$ в точке $\overline{x}_0$ называют
+вектор 
+
+\[grad f(\overline{x}_0) = \left(\frac{df}{dx_1}(\overline{x}_0,
+\dots, \frac{df}{dx_m}(\overline{x}_0))\right).\]
+
+Замечание: \smallskip
+
+Рассмотрим случай $m - 2, 3.$ Тогда, как известно,
+
+\[\frac{df}{d\overline{a}}(\overline{x}_0) = grad f(\overline{x}_0)
+* \overline{a} = |grad f(\overline{x}_0)| * |\overline{a}| *
+\cos \phi = |grad f(\overline{x}_0)| * \cos \phi,\]
+
+где $\phi$~--- угол между векторами $grad f (\overline{x}_0)$
+и $\overline{a}$. \smallskip
+
+На основании этого можно сделать выводы, что: \smallskip
+
+1) вектор градиент $grad f(\overline{x}_0)$ указывает направление,
+по которому функция $f$ имеет максимальную производную в
+точке $\overline{x}_0$; \smallskip
+
+2) значение производной функции $f$ по направлению, определённому
+градиентом этой функции в точке $\overline{x}_0$, равно длине 
+вектора градиента $|grad f(\overline{x}_0)|.$

@@ -1,0 +1,64 @@
+\textbf{1. Теорема о диффиренцировании сложной функции:} \smallskip
+
+Пусть функци $f$ дифференцируема в точке $\overline{x}_0$ и
+$\forall i = 1, \dots, m \quad g_i$ дифференцируемы в точке 
+$\overline{t}_0$ и $\overline{x}_0 = g(\overline{t}_0).$
+Тогда функция $f \circ \overline{g}$ диффиренцируема в
+точке $\overline{t}_0$ и $\forall j = 1, \dots, k$ и справедливо
+равенство
+
+\[\frac{d(f \circ \overline{g})}{d t_j}(\overline{t}_0) 
+= \frac{df}{dx_1}(\overline{x}_0)\frac{dg_1}{dt_j}(\overline{t}_0) +
+\dots + \frac{df}{dx_m}(\overline{x}_0)
+\frac{dg_m}{dt_j}(\overline{t}_0).\]
+
+Доказательство: \smallskip
+
+Так как функция $f$ дифференцируема в точке $\overline{x}_0$, то 
+
+\[f(\overline{x}) - f(\overline{x}_0) = \sum^m_{i = 1} 
+\phi_i(\overline{x})(x_i - x^0_i),\]
+
+где функции $\phi_i \quad (i = 1, \dots, m)$ непрерывны в точке
+$\overline{x}_0$ и $\phi_i (\overline{x}_0) = \frac{df}{dx_i}
+(\overline{x}_0).$ \smallskip
+
+Поскольку $\overline{x} = \overline{g}(\overline{t})$ и
+$\overline{x}_0 = \overline{g}(\overline{t}_0),$ то 
+
+\[(f \circ \overline{g})(\overline{t}) - (f \circ
+\overline{g})(\overline{t}_0) = f(\overline{g}(\overline{t})) - 
+f(\overline{g}(\overline{t}_0)) = f(g_1(\overline{t}) + \dots + 
+g_m(\overline{t})) - f(g_1(\overline{t}_0) + \dots +
+g_m(\overline{t}_0)) = \] 
+
+\[= \sum^m_{i = 1} f(\overline{g}(\overline{t}))
+(g_i(\overline{t}) - g_i(\overline{t}_0))\]
+
+Так как $\forall i = 1, \dots, m \quad g_i$ дифференцируемы в точке
+$\overline{t}_0$, то $\exists \psi_{ij}(\overline{t})$ непрерывные
+в точке $\overline{t}_0$ такие, что
+
+\[g_i(\overline{t}) - g_i(\overline{t}_0) = 
+\sum^k_{j = 1} \psi_{ij}(\overline{t})(t_j - t^0_j),\]
+
+и $\psi_{ij}(\overline{t}_0) = \frac{dg_i}{dt_j}(\overline{t}_0).$
+Тогда
+
+\[(f \circ \overline{g})(\overline{t}) - (f \circ \overline{g})
+(\overline{t}_0) = \sum^m_{i = 1} \phi _i (\overline{g}
+(\overline{t}))\left(\sum^k_{j = 1} \psi_{ij}(\overline{t})(
+t_j - t^0_j)\right) =\]
+
+\[= \sum^k_{j = 1} \left(\sum^m_{i = 1} \phi_i(\overline{g}(
+\overline{t}))\psi_{ij}(\overline{t})\right)(t_j - t^0_j).\]
+
+Осталось заметить, что функции $\phi(\overline{g}(\overline{t}))
+\psi_{ij}(\overline{t})$ непрерывны в точке $\overline{t}_0$, и
+последнее равентсво означает условие диффиренцируемости
+функции $f \circ \overline{g}$ в точке $\overline{t}_0$. Кроме того
+$\forall j = 1, \dots, k$
+
+\[\frac{d(f \circ \overline{g})}{dt_j}(\overline{t}_0) = 
+\sum^m_{i = 1}\frac{df}{dx_i}(\overline{x}_0)\frac{dg_i}{
+dt_j}(\overline{t}_0).\]
