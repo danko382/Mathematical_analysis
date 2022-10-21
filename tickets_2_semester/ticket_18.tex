@@ -21,7 +21,44 @@ $5. ||f + g|| \leq ||f|| + ||g||.$ \smallskip
 
 $6. ||f * g|| \leq ||f|| * ||g||.$ \smallskip
 
-Доказательство: (нужно найти и написать) \bigskip
+Доказательство: \smallskip
+
+1) Пусть $\exists x \in X: |f(x)| > ||f|| \Rightarrow
+|f(x)| > \sup_{x \in X} |f(x)|$, что противоречит определению
+супремума. \smallskip
+
+2) Пусть $||f|| < +\infty$. Тогда 
+
+\[\exists M \in R \quad ||f|| \leq M \Rightarrow
+|f(x)| < ||f|| \leq M.\]
+
+3) Пусть $\sup_{x \in X} |f(x)| = 0 \Rightarrow \forall x \in X
+\quad |f(x)| \leq 0 \Rightarrow |f(x)| = 0
+\Rightarrow f(x) = 0$ \smallskip
+
+4) $\forall x \in X \quad |f(x)| \leq ||f||$ \smallskip
+
+1. $\lambda \neq 0$
+
+\[||f|| |\lambda| \geq \sup_{x \in X}|\lambda f(x)| = ||\lambda f||\]
+
+2. $\lambda = 0$
+
+\[0 \geq 0\]
+
+5) $\forall x \in X \quad |f(x)| \leq ||f|| \quad |g(x)|
+\leq ||g||$ \smallskip
+
+$|f(x) + g(x)| = $ или $||f(x)| - |g(x)||$, или
+$||f(x)| + |g(x)||$ \smallskip
+
+В силу свойств модуля
+
+\[||f(x)| - |g(x)|| \leq |f(x)| + |g(x)| \leq ||f|| + ||g||\]
+
+\[||f(x)| + |g(x)|| \leq |f(x)| + |g(x)| \leq ||f|| + ||g||\]
+
+6) Доказывается аналогично доказательству пункта 5. \bigskip
 
 \textbf{2. Равномерная сходимость функции:} \smallskip
 
